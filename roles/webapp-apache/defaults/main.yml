@@ -1,0 +1,8 @@
+---
+# defaults file for webapp-apache
+system_user: vagrant
+container_name: webapp
+container_port: 80
+apache_port: 80
+template_file: index.html.j2
+ansible_python_interpreter: /usr/bin/python3
