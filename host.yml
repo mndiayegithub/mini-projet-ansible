@@ -1,6 +1,4 @@
-prod:
+clients:
   hosts:
     client1:
-#staging:
-#  hosts:
-#    client2:
+    client2:
