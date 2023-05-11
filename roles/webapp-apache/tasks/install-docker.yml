@@ -27,10 +27,10 @@
   #- Start Docker service
 
 - name: Start Docker Service
-    service:
-      name: docker
-      state: started
-      enabled: yes 
+  service:
+    name: docker
+    state: started
+    enabled: yes 
 
 - name: Install docker-compose
   get_url:
