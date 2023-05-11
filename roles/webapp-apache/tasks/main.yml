@@ -1,10 +1,10 @@
 ---
 # tasks file for webapp-apache
-- include_tasks: install_packages.yml
+- include_tasks: install-packages.yml
 - include_tasks: install-docker.yml
 - name: Copy/paste template website file
   template:
-    src: /templates/"{{ template_file }}"
+    src: "{{ template_file }}"
     dest: "/home/{{ system_user }}/index.html"
 
 - name: Create Apache container
@@ -14,6 +14,6 @@
     ports: 
       - "{{ container_port }}:{{ apache_port }}"
     volumes:
-      - /home/"{{ system_user }}/index.html:/usr/local/apache2/htdocs/index.html"
+      - "/home/{{ system_user }}/index.html:/usr/local/apache2/htdocs/index.html"
   tags:
   - start_container
