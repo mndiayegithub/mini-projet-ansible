@@ -1,5 +1,5 @@
 ---
-# vars file for webapp-apache
+## vars file for webapp-apache
 install_packages:
     - epel-release
     - wget
