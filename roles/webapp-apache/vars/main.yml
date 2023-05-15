@@ -1,2 +1,11 @@
 ---
 # vars file for webapp-apache
+install_packages:
+    - epel-release
+    - wget
+    - git
+    - yum-utils
+    - device-mapper-persistent-data
+    - lvm2
+    - python3
+    - python3-pip
