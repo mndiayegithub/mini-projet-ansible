@@ -20,7 +20,7 @@ apache_port: 80
 template_file: index.html.j2
 ansible_python_interpreter: /usr/bin/python3
 
-# default vars for html page
+# vars for html page
 background_color: blue
 contents: "Nice deployment!"
 
