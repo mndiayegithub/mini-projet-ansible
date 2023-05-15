@@ -1,4 +1,4 @@
 Mini - project Ansible
 =========
 
-Deploy a Webapp in Apache Server with Ansible and Docker.
+Configuration and deployment of a Apache Web Server with Ansible and Docker.
